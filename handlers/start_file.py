@@ -7,6 +7,7 @@ def start_file_handler():
 
 def welcome_message(message):
     try:
+        print("test")
         sqlite.insert_user(message.from_user.id)
         bot.send_message(message.from_user.id, "Вы зарегистрированы в базе!")
     except Exception as e:
