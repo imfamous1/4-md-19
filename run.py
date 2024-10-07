@@ -1,10 +1,12 @@
 from bot_settings import bot
-from handlers import start_file, products
+from handlers import start_message, products, admin
 
 
 def register_handlers():
-    start_file.start_file_handler()
+    start_message.start_file_handler()
     products.products_handler()
+    admin.admin_handler()
+
 
 register_handlers()
 
